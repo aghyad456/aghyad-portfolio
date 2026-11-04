@@ -1,0 +1,99 @@
+
+@import "tailwindcss";
+
+/* Google Fonts: IBM Plex Sans Arabic, Inter, Oxanium, Readex Pro, Space Grotesk */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Oxanium:wght@400;500;600;700;800&family=Readex+Pro:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@plugin './hero.js';
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+
+/* ========================================
+   LIGHT MODE
+======================================== */
+:root {
+  color-scheme: light;
+
+  /* Backgrounds */
+  --mainColorL: #F7F5F0;
+  --surfaceColorL: #F4F1EA;
+
+  /* Text */
+  --textColorL: #28231F;
+  --mutedColorL: #716B63;
+
+  /* Brand */
+  --accentColorL: #8A6248;
+  --accentHoverL: #745039;
+  --accentSoftL: #D6C5B3;
+
+  /* Borders */
+  --borderColorL: #E5DED2;
+
+  /* Active theme tokens */
+  --main-color: var(--mainColorL);
+  --surface-color: var(--surfaceColorL);
+  --text-color: var(--textColorL);
+  --muted-color: var(--mutedColorL);
+  --accent-color: var(--accentColorL);
+  --accent-hover: var(--accentHoverL);
+  --accent-soft: var(--accentSoftL);
+  --border-color: var(--borderColorL);
+}
+
+/* ========================================
+   DARK MODE
+======================================== */
+.dark {
+  color-scheme: dark;
+
+  /* Backgrounds */
+  --mainColorD: #111110;
+  --surfaceColorD: #1C1B19;
+
+  /* Text */
+  --textColorD: #F5F1EA;
+  --mutedColorD: #B5ACA0;
+
+  /* Brand */
+  --accentColorD: #D6A17C;
+  --accentHoverD: #E2B18F;
+  --accentSoftD: #594535;
+
+  /* Borders */
+  --borderColorD: #393630;
+
+  /* Active theme tokens */
+  --main-color: var(--mainColorD);
+  --surface-color: var(--surfaceColorD);
+  --text-color: var(--textColorD);
+  --muted-color: var(--mutedColorD);
+  --accent-color: var(--accentColorD);
+  --accent-hover: var(--accentHoverD);
+  --accent-soft: var(--accentSoftD);
+  --border-color: var(--borderColorD);
+}
+
+/* ========================================
+   TAILWIND THEME TOKENS
+======================================== */
+@theme {
+  --color-main: var(--main-color);
+  --color-surface: var(--surface-color);
+
+  --color-text-main: var(--text-color);
+  --color-text-muted: var(--muted-color);
+
+  --color-accent: var(--accent-color);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
+
+  --color-border: var(--border-color);
+
+  --font-ibm: "IBM Plex Sans Arabic", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-oxanium: "Oxanium", sans-serif;
+  --font-readex: "Readex Pro", sans-serif;
+  --font-space: "Space Grotesk", sans-serif;
+}
