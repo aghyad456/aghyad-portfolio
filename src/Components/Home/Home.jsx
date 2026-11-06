@@ -23,7 +23,7 @@ export default function Home() {
     <section
       ref={sectionRef}
       id="home"
-      className="min-h-screen flex items-center pt-16 pb-8"
+      className="min-h-screen flex items-center pt-16 pb-8 bg-main"
     >
       <div className="mx-auto w-full max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 

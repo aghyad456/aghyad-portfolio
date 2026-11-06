@@ -72,7 +72,7 @@ function ProjectModal({ project, onClose, isArabic }) {
 
   return (
     <motion.div
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-3 backdrop-blur-md sm:p-6"
+      className="fixed bg-main inset-0 z-[100] flex items-center justify-center bg-black/60 p-3 backdrop-blur-md sm:p-6"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

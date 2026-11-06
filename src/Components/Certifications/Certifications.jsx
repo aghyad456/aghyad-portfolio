@@ -47,7 +47,7 @@ export default function Certifications() {
     <section
       ref={sectionRef}
       id="certifications"
-      className="scroll-mt-20 py-24"
+      className="scroll-mt-20 bg-main py-24"
     >
       <div className="mx-auto w-full max-w-7xl px-6">
         {/* Section Heading */}

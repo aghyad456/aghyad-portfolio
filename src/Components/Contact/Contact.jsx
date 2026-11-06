@@ -22,7 +22,7 @@ export default function Contact() {
     <section
       ref={sectionRef}
       id="contact"
-      className="min-h-screen flex items-center pt-24 pb-16"
+      className="min-h-screen bg-main flex items-center pt-24 pb-16"
     >
       <div className="mx-auto w-full max-w-7xl px-6">
 
