@@ -23,7 +23,7 @@ export default function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="min-h-screen bg-main flex items-center pt-24 pb-16"
+      className="min-h-screen bg-main flex items-center pt-24 pb-16 overflow-x-clip"
     >
       <div className="mx-auto w-full max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
 
